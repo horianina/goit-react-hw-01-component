@@ -11,18 +11,18 @@ const ItemId = styled.ul`
   
   `;
 const Statistic = styled.section`
-width:300px;
-heigth:200px;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items:center;
+  width:300px;
+  heigth:200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 `;
 const Title = styled.h2`
-color: #959da5;
-font-size: 18px;
-line-height: 1.5;
-text-transform:uppercase;
+  color: #959da5;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform:uppercase;
   
   `;
 

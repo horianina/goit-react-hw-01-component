@@ -1,24 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Friends from './Friends'
+import styled from "styled-components"
+
+const List = styled.ul`
+list-style-type: none;
+padding:0;
+
+`;
 
 
 const FriendList = ({friends})=>(
-  <ul class="friend-list">
+  
 
-
-    {friends.map((friendListItem)=>(
-      <li key = {friendListItem.id}>
-        {/* <Statistics title="Upload stats" stats={statisticalData} />; */}
-        <Friends 
-        avatar={friendListItem.avatar}
-        name={friendListItem.name}
-        isOnline={friendListItem.isOnline}
-
-      />
-      </li>
+<List class="friend-list">
+    {friends.map(({id,avatar,name,isOnline})=>(
+        <Friends key = {id}
+        avatar={avatar}
+        name={name}
+        isOnline={isOnline}
+        />
     ))}
-  </ul>
+    </List>
 )
 FriendList.propTypes={
   friends: PropTypes.arrayOf(PropTypes.shape({

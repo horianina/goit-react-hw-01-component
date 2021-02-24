@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import styled from "styled-components"
 
 
-
 const Item = styled.li`
   display: flex;
   flex-direction: column;
@@ -11,17 +10,15 @@ const Item = styled.li`
   list-style-type: none;
   width: 60px;
   heigth:auto;
-  
-  `;
-  const Label = styled.span`
-  font-size: 14px;
-  
-  `;
-  const Percentage = styled.span`
-  font-size: 16px;
-  
-  `;
+`;
 
+const Label = styled.span`
+  font-size: 14px;
+`;
+
+const Percentage = styled.span`
+  font-size: 16px; 
+`;
 
 const Statistics = ({statsLabel,statsPercentage})=>{
   return(

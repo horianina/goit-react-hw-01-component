@@ -25,12 +25,14 @@ const App=()=>{
   //   />
 
 
- <StatisticsList title="Upload stats" stats={statisticalData}  
-StatisticsList statisticalData={statisticalData} /> 
+//  <StatisticsList 
+//  title="Upload stats" stats={statisticalData}  
+//  StatisticsList statisticalData={statisticalData} /> 
 
 
 //<FriendList friends={friends} />
-//<TransactionHistory transactions={transactions} />
+
+<TransactionHistory transactions={transactions} />
   )
 }
 export default App
