@@ -14,15 +14,15 @@ import Transactions from './Transactions'
 
 const App=()=>{
   return(
-  //   <Profile
-  // name={user.name}
-  // tag={user.tag}
-  // location={user.location}
-  // avatar={user.avatar}
-  // statsFollowers={user.stats.followers}
-  // statsViews={user.stats.views}
-  // statsLikes={user.stats.likes}
-  //   />
+    <Profile
+  name={user.name}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  statsFollowers={user.stats.followers}
+  statsViews={user.stats.views}
+  statsLikes={user.stats.likes}
+    />
 
 
 //  <StatisticsList 
@@ -32,7 +32,7 @@ const App=()=>{
 
 //<FriendList friends={friends} />
 
-<TransactionHistory transactions={transactions} />
+//<TransactionHistory transactions={transactions} />
   )
 }
 export default App
