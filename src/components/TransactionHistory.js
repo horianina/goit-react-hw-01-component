@@ -7,38 +7,25 @@ const Table = styled.table`
 border: 1px #959da5 solid;
 width: 600px;
 height: 800px;
-
-
-
 `;
-const Tr = styled.tr`
 
-
-
-`;
 const Th = styled.th`
 text-transform: uppercase;
 border-left: 1px solid black;
 border-bottom: 1px solid black;
-
-
 `;
 
-
 const TransactionHistory = ({transactions})=>(
-  
   <>
     <Table class="transaction-history">
-  
       <thead>
-        <Tr>
+        <tr>
           <Th>Type</Th>
           <Th>Amount</Th>
           <Th>Currency</Th>
-        </Tr>
+        </tr>
       </thead>
-      <tbody>
-        
+      <tbody>  
         {transactions.map((items)=>(
                 <Transactions key = {items.id}
                 type={items.type}
@@ -47,15 +34,12 @@ const TransactionHistory = ({transactions})=>(
                 />
         ))}
       </tbody>
-   
-  
   </Table>
   </>
 )
 TransactionHistory.propTypes={
   transactions: PropTypes.arrayOf(PropTypes.shape({
-    id:PropTypes.string.isRequired,
-    
+    id:PropTypes.string.isRequired,  
   })).isRequired
 }
 export default TransactionHistory

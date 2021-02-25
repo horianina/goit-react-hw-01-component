@@ -11,15 +11,12 @@ const Item = styled.li`
   width: 60px;
   heigth:auto;
 `;
-
 const Label = styled.span`
   font-size: 14px;
 `;
-
 const Percentage = styled.span`
   font-size: 16px; 
 `;
-
 const Statistics = ({statsLabel,statsPercentage})=>{
   return(
         <Item class="item">
@@ -30,8 +27,7 @@ const Statistics = ({statsLabel,statsPercentage})=>{
 }
 Statistics.propTypes={
   statsLabel: PropTypes.string.isRequired,
-  statsPercentage: PropTypes.number.isRequired,
-  
+  statsPercentage: PropTypes.number.isRequired, 
 }
 
 export default Statistics

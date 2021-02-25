@@ -7,8 +7,6 @@ const ItemId = styled.ul`
   list-style-type: none;
   padding:0;
   display: flex;
-  
-  
   `;
 const Statistic = styled.section`
   width:300px;
@@ -23,24 +21,18 @@ const Title = styled.h2`
   font-size: 18px;
   line-height: 1.5;
   text-transform:uppercase;
-  
   `;
-
-
 const StatisticsList = ({statisticalData})=>(
   <>
-  
   <Statistic class="statistics">
     <Title class="title">Upload stats</Title>
       <ItemId>
         {statisticalData.map((item)=>(
-          
             <Statistics key = {item.id}
             stats={item.statisticalData}
             statsLabel={item.label}
             statsPercentage={item.percentage}
-          />
-          
+          />  
         ))}
         </ItemId>
     </Statistic>
@@ -48,8 +40,7 @@ const StatisticsList = ({statisticalData})=>(
 )
 StatisticsList.propTypes={
   statisticalData: PropTypes.arrayOf(PropTypes.shape({
-    id:PropTypes.string.isRequired,
-    
+    id:PropTypes.string.isRequired, 
   })).isRequired
 }
   export default StatisticsList

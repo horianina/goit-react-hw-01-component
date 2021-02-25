@@ -6,13 +6,10 @@ import styled from "styled-components"
 const List = styled.ul`
 list-style-type: none;
 padding:0;
-
 `;
-
 
 const FriendList = ({friends})=>(
   
-
 <List class="friend-list">
     {friends.map(({id,avatar,name,isOnline})=>(
         <Friends key = {id}
@@ -25,8 +22,7 @@ const FriendList = ({friends})=>(
 )
 FriendList.propTypes={
   friends: PropTypes.arrayOf(PropTypes.shape({
-    id:PropTypes.string.isRequired,
-    
+    id:PropTypes.string.isRequired,  
   })).isRequired
 }
 export default FriendList

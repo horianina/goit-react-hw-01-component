@@ -19,7 +19,6 @@ const Status = styled.span`
   border-radius: 50%;
   background:${props =>props.isOnline ? "green" : "red"};
   margin-rigth:20px;
-
 `;
 
 const Image = styled.img`
@@ -37,20 +36,17 @@ const Name = styled.p`
 
 const Friends = ({avatar,name,isOnline})=>{
   return(
-    
     <Item class="item">
       <Status isOnline={isOnline}  class="status">{isOnline}</Status>
       <Image class="avatar" src={avatar} alt={name} width="48" />
       <Name class="name">{name}</Name>
     </Item>
-
   )
 }
 Friends.propTypes={
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.string.isRequired,
-  
 }
 
 export default Friends

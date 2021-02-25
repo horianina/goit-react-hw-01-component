@@ -1,16 +1,14 @@
 import React from 'react'
-import user from '../user.json'
+import user from '../data/user.json'
 import Profile from './Profile'
-import statisticalData from '../statistical-data.json';
+import statisticalData from '../../src/data/statistical-data.json';
 import StatisticsList from './StatisticsList'
-import friends from '../friends.json'
+import friends from '../data/friends.json'
 import FriendList from './FriendList'
 import Friends from './Friends'
 import TransactionHistory from './TransactionHistory'
-import transactions from '../transactions.json'
+import transactions from '../data/transactions.json'
 import Transactions from './Transactions'
-
-
 
 const App=()=>{
   return(
@@ -21,13 +19,11 @@ const App=()=>{
   avatar={user.avatar}
   statsFollowers={user.stats.followers}
   statsViews={user.stats.views}
-  statsLikes={user.stats.likes}
-    />
-
-
-//  <StatisticsList 
-//  title="Upload stats" stats={statisticalData}  
-//  StatisticsList statisticalData={statisticalData} /> 
+  statsLikes={user.stats.likes}/>
+    
+  // <StatisticsList 
+  // title="Upload stats" stats={statisticalData}  
+  // StatisticsList statisticalData={statisticalData} />
 
 
 //<FriendList friends={friends} />
