@@ -16,7 +16,7 @@ border-bottom: 1px solid black;
 `;
 
 const TransactionHistory = ({transactions})=>(
-  <>
+  
     <Table className="transaction-history">
       <thead>
         <tr>
@@ -35,7 +35,7 @@ const TransactionHistory = ({transactions})=>(
         ))}
       </tbody>
   </Table>
-  </>
+  
 )
 TransactionHistory.propTypes={
   transactions: PropTypes.arrayOf(PropTypes.shape({
