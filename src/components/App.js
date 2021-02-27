@@ -9,9 +9,9 @@ import TransactionHistory from './TransactionHistory'
 import transactions from '../data/transactions.json'
 
 
-const App=()=>{
+const App=()=>(
   
-  return(
+  
     <>
     <Profile
   name={user.name}
@@ -33,5 +33,5 @@ const App=()=>{
 </>
   )
   
-}
+
 export default App
