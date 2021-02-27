@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Transactions from './Transactions'
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Table = styled.table`
 border: 1px #959da5 solid;
