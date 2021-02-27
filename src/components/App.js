@@ -25,11 +25,12 @@ const App=()=>(
   <StatisticsList 
   title="Upload stats" stats={statisticalData}  
   StatisticsList statisticalData={statisticalData} />
-
+  
+<TransactionHistory transactions={transactions} />
 
 <FriendList friends={friends} />
 
-<TransactionHistory transactions={transactions} />
+
 </>
   )
   
