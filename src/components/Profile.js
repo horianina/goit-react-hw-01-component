@@ -74,30 +74,30 @@ margin:0 auto;
 
 const Profile = ({avatar,name,tag,location,statsFollowers,statsViews,statsLikes})=>{
   return(
-    <ProfileWrapper class="profile">
-      <Description class="description">
+    <ProfileWrapper className="profile">
+      <Description className="description">
         <Image
           src={avatar}
           alt="Аватар пользователя"
-          class="avatar"
+          className="avatar"
         />
-        <Name class="name">{name}</Name>
-        <Tag class="tag">@{tag}</Tag>
-        <Location class="location">{location}</Location>
+        <Name className="name">{name}</Name>
+        <Tag className="tag">@{tag}</Tag>
+        <Location className="location">{location}</Location>
       </Description>
 
-      <Stats class="stats">
+      <Stats className="stats">
         <StatsItem>
-          <Label class="label">Followers</Label>
-          <Quantity class="quantity">{statsFollowers}</Quantity>
+          <Label className="label">Followers</Label>
+          <Quantity className="quantity">{statsFollowers}</Quantity>
         </StatsItem>
         <StatsItem>
-          <Label class="label">Views</Label>
-          <Quantity class="quantity">{statsViews}</Quantity>
+          <Label className="label">Views</Label>
+          <Quantity className="quantity">{statsViews}</Quantity>
         </StatsItem>
         <StatsItem>
-          <Label class="label">Likes</Label>
-          <Quantity class="quantity">{statsLikes}</Quantity>
+          <Label className="label">Likes</Label>
+          <Quantity className="quantity">{statsLikes}</Quantity>
         </StatsItem>
       </Stats>
 </ProfileWrapper>

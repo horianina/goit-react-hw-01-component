@@ -36,10 +36,10 @@ const Name = styled.p`
 
 const Friends = ({avatar,name,isOnline})=>
   (
-    <Item class="item">
-      <Status isOnline={isOnline}  class="status">{isOnline}</Status>
-      <Image class="avatar" src={avatar} alt={name} width="48" />
-      <Name class="name">{name}</Name>
+    <Item className="item">
+      <Status isOnline={isOnline}  className="status">{isOnline}</Status>
+      <Image className="avatar" src={avatar} alt={name} width="48" />
+      <Name className="name">{name}</Name>
     </Item>
   )
 

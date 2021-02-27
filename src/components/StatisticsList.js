@@ -24,8 +24,8 @@ const Title = styled.h2`
   `;
 const StatisticsList = ({statisticalData})=>(
   <>
-  <Statistic class="statistics">
-    <Title class="title">Upload stats</Title>
+  <Statistic className="statistics">
+    <Title className="title">Upload stats</Title>
       <ItemId>
         {statisticalData.map((item)=>(
             <Statistics key = {item.id}

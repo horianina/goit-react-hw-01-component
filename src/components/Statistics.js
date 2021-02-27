@@ -19,9 +19,9 @@ const Percentage = styled.span`
 `;
 const Statistics = ({statsLabel,statsPercentage})=>
   (
-        <Item class="item">
-          <Label class="label">{statsLabel}</Label>
-          <Percentage class="percentage">{statsPercentage}%</Percentage>
+        <Item className="item">
+          <Label className="label">{statsLabel}</Label>
+          <Percentage className="percentage">{statsPercentage}%</Percentage>
         </Item>
   )
 

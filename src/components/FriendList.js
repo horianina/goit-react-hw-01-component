@@ -10,7 +10,7 @@ padding:0;
 
 const FriendList = ({friends})=>(
   
-<List class="friend-list">
+<List className="friend-list">
     {friends.map(({id,avatar,name,isOnline})=>(
         <Friends key = {id}
         avatar={avatar}

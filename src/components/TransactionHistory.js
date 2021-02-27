@@ -17,7 +17,7 @@ border-bottom: 1px solid black;
 
 const TransactionHistory = ({transactions})=>(
   <>
-    <Table class="transaction-history">
+    <Table className="transaction-history">
       <thead>
         <tr>
           <Th>Type</Th>
