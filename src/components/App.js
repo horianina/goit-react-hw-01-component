@@ -5,10 +5,9 @@ import statisticalData from '../../src/data/statistical-data.json';
 import StatisticsList from './StatisticsList'
 import friends from '../data/friends.json'
 import FriendList from './FriendList'
-import Friends from './Friends'
 import TransactionHistory from './TransactionHistory'
 import transactions from '../data/transactions.json'
-import Transactions from './Transactions'
+
 
 const App=()=>{
   return(
@@ -19,16 +18,16 @@ const App=()=>{
   avatar={user.avatar}
   statsFollowers={user.stats.followers}
   statsViews={user.stats.views}
-  statsLikes={user.stats.likes}/>
+  statsLikes={user.stats.likes}/>,
     
-  // <StatisticsList 
-  // title="Upload stats" stats={statisticalData}  
-  // StatisticsList statisticalData={statisticalData} />
+  <StatisticsList 
+  title="Upload stats" stats={statisticalData}  
+  StatisticsList statisticalData={statisticalData} />,
 
 
-//<FriendList friends={friends} />
+<FriendList friends={friends} />,
 
-//<TransactionHistory transactions={transactions} />
+<TransactionHistory transactions={transactions} />
   )
 }
 export default App
