@@ -46,7 +46,7 @@ const Friends = ({avatar,name,isOnline})=>{
 Friends.propTypes={
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  isOnline: PropTypes.string.isRequired,
+  
 }
 
 export default Friends
