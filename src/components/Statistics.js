@@ -17,14 +17,14 @@ const Label = styled.span`
 const Percentage = styled.span`
   font-size: 16px; 
 `;
-const Statistics = ({statsLabel,statsPercentage})=>{
-  return(
+const Statistics = ({statsLabel,statsPercentage})=>
+  (
         <Item class="item">
           <Label class="label">{statsLabel}</Label>
           <Percentage class="percentage">{statsPercentage}%</Percentage>
         </Item>
   )
-}
+
 Statistics.propTypes={
   statsLabel: PropTypes.string.isRequired,
   statsPercentage: PropTypes.number.isRequired, 

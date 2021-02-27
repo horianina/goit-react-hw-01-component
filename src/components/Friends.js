@@ -34,15 +34,15 @@ const Name = styled.p`
   margin-left:20px;
 `;
 
-const Friends = ({avatar,name,isOnline})=>{
-  return(
+const Friends = ({avatar,name,isOnline})=>
+  (
     <Item class="item">
       <Status isOnline={isOnline}  class="status">{isOnline}</Status>
       <Image class="avatar" src={avatar} alt={name} width="48" />
       <Name class="name">{name}</Name>
     </Item>
   )
-}
+
 Friends.propTypes={
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
