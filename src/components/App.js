@@ -10,7 +10,9 @@ import transactions from '../data/transactions.json'
 
 
 const App=()=>{
+  
   return(
+    <>
     <Profile
   name={user.name}
   tag={user.tag}
@@ -18,16 +20,18 @@ const App=()=>{
   avatar={user.avatar}
   statsFollowers={user.stats.followers}
   statsViews={user.stats.views}
-  statsLikes={user.stats.likes}/>,
+  statsLikes={user.stats.likes}/>
     
   <StatisticsList 
   title="Upload stats" stats={statisticalData}  
-  StatisticsList statisticalData={statisticalData} />,
+  StatisticsList statisticalData={statisticalData} />
 
 
-<FriendList friends={friends} />,
+<FriendList friends={friends} />
 
 <TransactionHistory transactions={transactions} />
+</>
   )
+  
 }
 export default App
